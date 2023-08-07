@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "UpdateTask";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>UpdateTask!!!!!!!!!</h2>
+
+<button type="submit" class="btn btn-primary" onclick=" redirectToAddTask()">Update Task</button>
+
+<script>
+    function redirectToAddTask() {
+        window.location.href = '@Url.Action("AddTask", "Task")';
+    }
+</script>
